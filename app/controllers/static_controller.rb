@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-	#layout 'layouts/latest'
+	layout 'layouts/latest'
   def home
   end
 
