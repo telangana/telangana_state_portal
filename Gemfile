@@ -13,7 +13,7 @@ end
 
 
 group :test do
-	gem 'mysql2'
+
 	gem 'selenium'
 	gem 'selenium-rake'
 	gem 'selenium-webdriver'
@@ -51,8 +51,6 @@ gem 'ckeditor'
 gem 'rails_admin_jcrop' 
 gem "rails_admin_import", :git => "git://github.com/stephskardal/rails_admin_import.git"
 
-#Serve Static files 
-gem 'rails_12factor'
 
 # Gems used only for assets and not required
 # in production environments by default.
