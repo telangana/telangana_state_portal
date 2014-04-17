@@ -9,16 +9,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-		<!-- Stylesheets -->
-		<link type="text/css" rel="stylesheet" href="/assets/reset.css" />
-		<link type="text/css" rel="stylesheet" href="/assets/main-stylesheet.css" />
-		<link type="text/css" rel="stylesheet" href="/assets/shortcode.css" />
-		<link type="text/css" rel="stylesheet" href="/assets/fonts.css" />
-		<link type="text/css" rel="stylesheet" href="/assets/retina.css" />
+		
+	 <%= stylesheet_link_tag    "reset.css" %>
+	 <%= stylesheet_link_tag    "main-stylesheet.css" %>
+	 <%= stylesheet_link_tag    "shortcode.css" %>
+	 <%= stylesheet_link_tag    "retina.css" %>
+	 <%= stylesheet_link_tag    "fonts.css" %>
+	 <%= stylesheet_link_tag    "reset.css" %>
+	 <%= stylesheet_link_tag    "reset.css" %>
+  <%= csrf_meta_tags %>		
+  
 		<!--[if lte IE 8]>
 		<link type="text/css" rel="stylesheet" href="css/ie-transparecy.css" />
 		<![endif]-->
-		<link type="text/css" id="style-responsive" rel="stylesheet" media="screen" href="/assets/responsive/desktop.css" />
+				 <%= stylesheet_link_tag    "responsive/desktop.css" %>
+
 		<!-- Scripts -->
 		<script type="text/javascript" src="/assets/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript">
