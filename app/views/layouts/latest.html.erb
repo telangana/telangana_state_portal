@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stg</title>
+  <%= csrf_meta_tags %>
+  	<!-- Meta Tags -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+		<!-- Stylesheets -->
+		<link type="text/css" rel="stylesheet" href="/assets/reset.css" />
+		<link type="text/css" rel="stylesheet" href="/assets/main-stylesheet.css" />
+		<link type="text/css" rel="stylesheet" href="/assets/shortcode.css" />
+		<link type="text/css" rel="stylesheet" href="/assets/fonts.css" />
+		<link type="text/css" rel="stylesheet" href="/assets/retina.css" />
+		<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" href="css/ie-transparecy.css" />
+		<![endif]-->
+		<link type="text/css" id="style-responsive" rel="stylesheet" media="screen" href="//assets/responsive/desktop.css" />
+		<!-- Scripts -->
+		<script type="text/javascript" src="/assets/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			var iPhoneVertical = Array(null,320,"/assets/responsive/phoneverticald41d.css?"+Date());
+			var iPhoneHorizontal = Array(321,767,"/assets/responsive/phonehorizontald41d.css?"+Date());
+			var iPad = Array(768,1000,"/assets/responsive/ipadd41d.css?"+Date());
+			var dekstop = Array(1001,null,"/assets/responsive/desktopd41d.css?"+Date());
+			
+			// Legatus Slider Options
+			var _legatus_slider_autostart = true;	// Autostart Slider (false / true)
+			var _legatus_slider_interval = 5000;	// Autoslide Interval (Def = 5000)
+			var _legatus_slider_loading = true;		// Autoslide With Loading Bar (false / true)
+		</script>
+		<link type="text/css" rel="stylesheet" href="/assets/demo-settings.css" />
+	<!-- END head -->
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+	  <script type="text/javascript" src="/assets/orange-themes-responsive.js"></script>
+		<script type="text/javascript" src="/assets/scripts.js"></script>
+		<!-- For Demo Only -->
+		<script type="text/javascript" src="/assets/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/assets/demo-settings.js"></script>
+</html>

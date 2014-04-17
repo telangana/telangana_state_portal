@@ -1,0 +1,27 @@
+<h1>Listing constitutions</h1>
+
+<table>
+  <tr>
+    <th>District</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Website</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @constitutions.each do |constitution| %>
+  <tr>
+    <td><%= constitution.district_id %></td>
+    <td><%= constitution.name %></td>
+    <td><%= constitution.description %></td>
+    <td><%= constitution.website %></td>
+    <td><%= link_to 'Show', constitution %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+

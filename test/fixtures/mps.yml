@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  website: MyString
+  facebook_page: MyString
+  district_id: 1
+  personal_info: MyText
+
+two:
+  name: MyString
+  description: MyText
+  website: MyString
+  facebook_page: MyString
+  district_id: 1
+  personal_info: MyText

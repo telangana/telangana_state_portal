@@ -1,0 +1,31 @@
+<h1>Listing mps</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Website</th>
+    <th>Facebook page</th>
+    <th>District</th>
+    <th>Personal info</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mps.each do |mp| %>
+  <tr>
+    <td><%= mp.name %></td>
+    <td><%= mp.description %></td>
+    <td><%= mp.website %></td>
+    <td><%= mp.facebook_page %></td>
+    <td><%= mp.district_id %></td>
+    <td><%= mp.personal_info %></td>
+    <td><%= link_to 'Show', mp %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+

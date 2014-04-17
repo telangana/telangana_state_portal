@@ -1,0 +1,33 @@
+<h1>Listing offices</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Website</th>
+    <th>Facebook page</th>
+    <th>Ph no1</th>
+    <th>Ph no2</th>
+    <th>Address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @offices.each do |office| %>
+  <tr>
+    <td><%= office.name %></td>
+    <td><%= office.description %></td>
+    <td><%= office.website %></td>
+    <td><%= office.facebook_page %></td>
+    <td><%= office.ph_no1 %></td>
+    <td><%= office.ph_no2 %></td>
+    <td><%= office.address %></td>
+    <td><%= link_to 'Show', office %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+

@@ -1,0 +1,23 @@
+<h1>Listing job_positions</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @job_positions.each do |job_position| %>
+  <tr>
+    <td><%= job_position.name %></td>
+    <td><%= job_position.description %></td>
+    <td><%= link_to 'Show', job_position %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+

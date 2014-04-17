@@ -1,0 +1,29 @@
+<h1>Listing state_cadres</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Candiate name</th>
+    <th>Description</th>
+    <th>Ph no1</th>
+    <th>Ph no2</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @state_cadres.each do |state_cadre| %>
+  <tr>
+    <td><%= state_cadre.name %></td>
+    <td><%= state_cadre.candiate_name %></td>
+    <td><%= state_cadre.description %></td>
+    <td><%= state_cadre.ph_no1 %></td>
+    <td><%= state_cadre.ph_no2 %></td>
+    <td><%= link_to 'Show', state_cadre %></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+

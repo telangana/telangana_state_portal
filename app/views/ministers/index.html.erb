@@ -1,0 +1,30 @@
+<h1>Listing ministers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Website</th>
+    <th>Facebook page</th>
+    <th>Constitution</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ministers.each do |minister| %>
+  <tr>
+    <td><%= minister.name %></td>
+    <td><%= minister.description %></td>
+    <td><%= minister.website %></td>
+    <td><%= minister.facebook_page %></td>
+    <td><%= minister.constitution_id %></td>
+    <td><%= link_to 'Show', minister %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

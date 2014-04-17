@@ -1,0 +1,31 @@
+<h1>Listing mlas</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Website</th>
+    <th>Facebook page</th>
+    <th>Constitution</th>
+    <th>Personal info</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mlas.each do |mla| %>
+  <tr>
+    <td><%= mla.name %></td>
+    <td><%= mla.description %></td>
+    <td><%= mla.website %></td>
+    <td><%= mla.facebook_page %></td>
+    <td><%= mla.constitution_id %></td>
+    <td><%= mla.personal_info %></td>
+    <td><%= link_to 'Show', mla %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+

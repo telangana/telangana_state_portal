@@ -1,0 +1,104 @@
+
+
+		<div class="header-very-top">
+					<div class="wrapper">
+						
+						<div class="left">
+							
+							<ul class="very-top-menu">
+								<li><a href="/" class="icon-text">&#8962;</a></li>
+								<li><a href=""><span>Districts</span></a>
+										<ul class="sub-menu">
+										  <% District.all.each do |dis_name| %>	
+		                   <li> <%=link_to "#{dis_name.name}",dis_name %></li> 
+		                   <% end %>
+		                   <li><%= link_to "More About Districts",districts_path%></li>
+									</ul>
+								</li> <!-- districts dropdown -->
+								<!-- Departments DropDown -->
+									<li><a href="#"><span>Departments</span></a>
+										<ul class="sub-menu">
+										  <% Department.latest.each do |dep_name| %>	
+		                   <li> <%=link_to "#{dep_name.name}",dep_name %></li> 
+		                   <% end %>
+		                  <li><%= link_to "Expolre More Departments",departments_path%></li>
+
+								  	</ul>
+								  </li>
+								  <!-- Departments DropDown -->
+
+									<li><a href="#"><span></span>Ministers</a>
+										<ul class="sub-menu">
+										  <% Minister.latest.each do |minister_name| %>	
+		                   <li> <%=link_to "#{minister_name.name}",minister_name %></li> 
+		                   <% end %>
+		                  <li><%= link_to "Expolre More Ministers",ministers_path%></li>
+
+									</ul>
+								</li>
+								<!-- ministers link -->
+									<li><a href="#"><span>Goverment Offices</span></a>
+										<ul class="sub-menu">
+										  <% Office.latest.each do |office_name| %>	
+		                   <li> <%=link_to "#{office_name.name}",office_name %></li> 
+		                   <% end %>
+ 		                  <li><%= link_to "Expolre More Offices",offices_path%></li>
+
+									  </ul>
+								  </li>
+									<!-- ministers link -->
+
+									<li><a href="#"><span>MLAS</span></a>
+										<ul class="sub-menu">
+										  <% Mla.latest.each do |mla_name| %>	
+		                   <li> <%=link_to "#{mla_name.name}",mla_name %></li> 
+		                   <% end %>
+   		                  <li><%= link_to "Expolre More MLAS",mlas_path%></li>
+
+									</ul>
+								</li>
+									<li><a href="#"><span>MPS</span></a>
+										<ul class="sub-menu">
+										  <% Mp.latest.each do |mp_name| %>	
+		                   <li> <%=link_to "#{mp_name.name}",mp_name %></li> 
+		                   <% end %>
+		                   <li><%= link_to "Expolre More MP'S",mps_path%></li>
+									</ul>
+								</li>
+
+
+
+								
+					
+								
+							</ul>
+						</div>
+
+						<div class="right">
+							<div class="weather-report">
+								<span>Weather</span>
+								<b>Hyderabad, Telangana</b>
+								<img src="images/weather-clouds.png" alt="" />
+
+								<!--
+									VERY HOT - #e33f24
+									HOT - #e87c2d
+									ZERO - #bbbaa7
+									COLD - #7ebecc
+									VERY COLD - #1c87c4
+								-->
+
+								<!-- <font class="weather-meter" style="background: #e33f24;">+20&deg;C</font> -->
+								<font class="weather-meter" style="background: #e87c2d;">+35&deg;C</font>
+								<!-- <font class="weather-meter" style="background: #bbbaa7;">0&deg;C</font> -->
+								<!-- <font class="weather-meter" style="background: #7ebecc;">-10&deg;C</font> -->
+								<!-- <font class="weather-meter" style="background: #1c87c4;">-20&deg;C</font> -->
+							</div>
+						</div>
+
+						<div class="clear-float"></div>
+						
+					</div>
+					<div class="double-split"></div>
+				<!-- END .header-very-top -->
+				</div>

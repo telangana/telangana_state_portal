@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  minister_id: 1
+  name: MyString
+  description: MyText
+  website: MyString
+  category: MyString
+
+two:
+  minister_id: 1
+  name: MyString
+  description: MyText
+  website: MyString
+  category: MyString

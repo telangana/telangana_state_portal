@@ -1,0 +1,256 @@
+			<!-- BEGIN .header -->
+			<div class="header">
+				
+				<!-- BEGIN .header-very-top -->
+				<div class="header-very-top">
+					<div class="wrapper">
+						
+						<div class="left">
+							
+							<ul class="very-top-menu">
+								<li><a href="/" class="icon-text">&#8962;</a></li>
+								<li><a href=""><span>Districts</span></a>
+										<ul class="sub-menu">
+										  <% District.all.each do |dis_name| %>	
+		                   <li> <%=link_to "#{dis_name.name}",dis_name %></li> 
+		                   <% end %>
+		                   <li><%= link_to "More About Districts",districts_path%></li>
+									</ul>
+								</li> <!-- districts dropdown -->
+								<!-- Departments DropDown -->
+									<li><a href="#"><span>Departments</span></a>
+										<ul class="sub-menu">
+										  <% Department.latest.each do |dep_name| %>	
+		                   <li> <%=link_to "#{dep_name.name}",dep_name %></li> 
+		                   <% end %>
+		                  <li><%= link_to "Expolre More Departments",departments_path%></li>
+
+								  	</ul>
+								  </li>
+								  <!-- Departments DropDown -->
+
+									<li><a href="#"><span></span>Ministers</a>
+										<ul class="sub-menu">
+										  <% Minister.latest.each do |minister_name| %>	
+		                   <li> <%=link_to "#{minister_name.name}",minister_name %></li> 
+		                   <% end %>
+		                  <li><%= link_to "Expolre More Ministers",ministers_path%></li>
+
+									</ul>
+								</li>
+								<!-- ministers link -->
+									<li><a href="#"><span>Goverment Offices</span></a>
+										<ul class="sub-menu">
+										  <% Office.latest.each do |office_name| %>	
+		                   <li> <%=link_to "#{office_name.name}",office_name %></li> 
+		                   <% end %>
+ 		                  <li><%= link_to "Expolre More Offices",offices_path%></li>
+
+									  </ul>
+								  </li>
+									<!-- ministers link -->
+
+									<li><a href="#"><span>MLAS</span></a>
+										<ul class="sub-menu">
+										  <% Mla.latest.each do |mla_name| %>	
+		                   <li> <%=link_to "#{mla_name.name}",mla_name %></li> 
+		                   <% end %>
+   		                  <li><%= link_to "Expolre More MLAS",mlas_path%></li>
+
+									</ul>
+								</li>
+									<li><a href="#"><span>MPS</span></a>
+										<ul class="sub-menu">
+										  <% Mp.latest.each do |mp_name| %>	
+		                   <li> <%=link_to "#{mp_name.name}",mp_name %></li> 
+		                   <% end %>
+		                   <li><%= link_to "Expolre More MP'S",mps_path%></li>
+									</ul>
+								</li>
+
+
+
+								
+					
+								
+							</ul>
+						</div>
+
+						<div class="right">
+							<div class="weather-report">
+								<span>Weather</span>
+								<b>Hyderabad, Telangana</b>
+								<img src="images/weather-clouds.png" alt="" />
+
+								<!--
+									VERY HOT - #e33f24
+									HOT - #e87c2d
+									ZERO - #bbbaa7
+									COLD - #7ebecc
+									VERY COLD - #1c87c4
+								-->
+
+								<!-- <font class="weather-meter" style="background: #e33f24;">+20&deg;C</font> -->
+								<font class="weather-meter" style="background: #e87c2d;">+35&deg;C</font>
+								<!-- <font class="weather-meter" style="background: #bbbaa7;">0&deg;C</font> -->
+								<!-- <font class="weather-meter" style="background: #7ebecc;">-10&deg;C</font> -->
+								<!-- <font class="weather-meter" style="background: #1c87c4;">-20&deg;C</font> -->
+							</div>
+						</div>
+
+						<div class="clear-float"></div>
+						
+					</div>
+					<div class="double-split"></div>
+				<!-- END .header-very-top -->
+				</div>
+
+				<!-- BEGIN .header-middle -->
+				<div class="header-middle">
+					<div class="wrapper">
+						
+						<!-- <div class="logo-text">
+							<h1><a href="index.html">LEGATUS</a></h1>
+						</div> -->
+						
+						<div class="logo-image">
+							<h1>Telangana Online</h1>
+							<a href="/"><img class="logo" src="/assets/logo.pn" alt="Telangana" /></a>
+						</div>
+
+						<div class="banner">
+							<div class="banner-block">
+								<a href="#"><img src="/assets/banner-468x60.jpg" alt="" /></a>
+							</div>
+							<div class="banner-info">
+								<a href="contact-us.html" class="sponsored"><span class="icon-default">&nbsp;</span>Sponsored Advert<span class="icon-default">&nbsp;</span></a>
+							</div>
+						</div>
+
+						<div class="clear-float"></div>
+						
+					</div>
+				<!-- END .header-middle -->
+				</div>
+
+				<!-- BEGIN .header-menu -->
+				<div class="header-menu thisisfixed">
+					<div class="wrapper">
+						
+						<ul class="main-menu">
+							<li style="background:#264c84;color:#264c84;"><a href="#">Departments<span>&nbsp;</span></a>
+										<ul class="sub-menu">
+										  <% Department.latest.each do |dep_name| %>	
+		                   <li> <%=link_to "#{dep_name.name}",dep_name %></li> 
+		                   <% end %>
+		                  <li><%= link_to "Expolre More Departments",departments_path%></li>
+
+								  	</ul>
+							</li>
+							<li style="background:#9f3819;color:#9f3819;"><a href="category.html">Districts<span>&nbsp;</span></a>
+									
+										<ul class="sub-menu">
+										  <% District.all.each do |dis_name| %>	
+		                   <li> <%=link_to "#{dis_name.name}",dis_name %></li> 
+		                   <% end %>
+		                   <li><%= link_to "More About Districts",districts_path%></li>
+									</ul>
+							</li>
+
+							<!-- Ministers -->
+							<li style="background:#6d8b13;color:#6d8b13;"><a href="category.html">Ministers</a>
+									<ul class="sub-menu">
+										  <% Minister.latest.each do |minister_name| %>	
+		                   <li> <%=link_to "#{minister_name.name}",minister_name %></li> 
+		                   <% end %>
+		                  <li><%= link_to "Expolre More Ministers",ministers_path%></li>
+
+									</ul>
+							</li>
+
+							<!-- government offices -->
+							<li style="background:#a21d1d;color:#a21d1d;"><a href="category.html">Government Offices</a>
+									<ul class="sub-menu">
+										  <% Office.latest.each do |office_name| %>	
+		                   <li> <%=link_to "#{office_name.name}",office_name %></li> 
+		                   <% end %>
+ 		                  <li><%= link_to "Expolre More Offices",offices_path%></li>
+
+									  </ul>
+
+							</li>
+
+							<!-- Government Officials -->
+							<li style="background:#338aa6;color:#338aa6;"><a href="category.html">Government Officials</a>
+											<ul class="sub-menu">
+										  <% OfficialProfile.latest.each do |office_name| %>	
+		                   <li> <%=link_to "#{office_name.name}",office_name %></li> 
+		                   <% end %>
+ 		                  <li><%= link_to "Expolre More Official Profles",offices_path%></li>
+
+									  </ul>
+							</li>
+							
+							<!-- Private Sector   -->
+							<li style="background:#4b4b4b;color:#4b4b4b;"><a href="category.html">Jobs</a>
+                  <ul class="sub-menu">
+										  <% Job.latest.each do |job_name| %>	
+		                   <li> <%=link_to "#{job_name.name}",job_name %></li> 
+		                   <% end %>
+ 		                  <li><%= link_to "Expolre More Jobs",jobs_path %></li>
+
+									 </ul>     
+							</li>
+
+								<!-- Private Sector   -->
+							<li style="background:#4b4b4b;color:#4b4b4b;"><a href="category.html">Constitutions</a>
+                  <ul class="sub-menu">
+										  <% Constitution.latest.each do |cons_name| %>	
+		                   <li> <%=link_to "#{cons_name.name}",cons_name %></li> 
+		                   <% end %>
+ 		                  <li><%= link_to "Expolre Constitutionss",constitutions_path %></li>
+
+									 </ul>     
+							</li>
+
+						</ul>
+
+						<div class="right menu-search">
+							<form action="" method="get">
+								<input type="text" placeholder="Search something.." value="" name="s" />
+								<input type="submit" class="search-button" value="&nbsp;" />
+							</form>
+						</div>
+						
+						<div class="clear-float"></div>
+
+					</div>
+				<!-- END .header-menu -->
+				</div>
+				
+
+				<!-- BEGIN .header-undermenu -->
+				<div class="header-undermenu">
+					<div class="wrapper">
+						
+						<ul class="secondary-menu">
+							<li background:#4b4b4b;color:#4b4b4b;> <a href="#">Private Sector</a></li>
+							<li><a href="#">Engineering Colleges</a></li>
+							<li><a href="#">Industries</a></li>
+							<li><a href="#">Companies</a></li>
+							<li><a href="#">Lawyers</a></li>
+							<li><a href="#">Some private industry</a></li>
+							<li><a href="#">Engineering Colleges</a></li>
+							<li><a href="#">Industries</a></li>
+							<li><a href="#">Companies</a></li>
+						</ul>
+						
+						<div class="clear-float"></div>
+
+					</div>
+				<!-- END .header-undermenu -->
+				</div>
+				
+			<!-- END .header -->
+			</div>
+			

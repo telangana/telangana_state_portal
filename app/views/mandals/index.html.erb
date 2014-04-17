@@ -1,0 +1,29 @@
+<h1>Listing mandals</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>District</th>
+    <th>Description</th>
+    <th>Website</th>
+    <th>Facebook page</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mandals.each do |mandal| %>
+  <tr>
+    <td><%= mandal.name %></td>
+    <td><%= mandal.district_id %></td>
+    <td><%= mandal.description %></td>
+    <td><%= mandal.website %></td>
+    <td><%= mandal.facebook_page %></td>
+    <td><%= link_to 'Show', mandal %></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+

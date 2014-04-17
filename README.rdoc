@@ -1,0 +1,48 @@
+===Requirements
+
+
+Places
+########
+
+Geographical
+########
+District  
+ 
+    1.district has_many mandals
+    2.ditrict  has_many constitutions
+
+Mandal
+   1.has_many villages
+   2.belongs_to constitution
+   3.belongs_to district 
+
+ --> constitution_id:integer
+     district_id:integer
+
+
+village  
+     1.belongs_to mandal
+
+Political View
+########
+
+Constitution
+#######
+  1.has_many --> mandals
+  2.belongs_to district
+
+  -->district_id:integer
+
+
+
+Oraganizations/Offices/Administration
+########
+  department
+
+
+
+People
+#########
+  mla
+  mp
+  minister

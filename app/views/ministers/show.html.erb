@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @minister.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @minister.description %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @minister.website %>
+</p>
+
+<p>
+  <b>Facebook page:</b>
+  <%= @minister.facebook_page %>
+</p>
+
+<p>
+  <b>Constitution:</b>
+  <%= @minister.constitution_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_minister_path(@minister) %> |
+<%= link_to 'Back', ministers_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  candiate_name: MyString
+  description: MyText
+  ph_no1: MyString
+  ph_no2: MyString
+
+two:
+  name: MyString
+  candiate_name: MyString
+  description: MyText
+  ph_no1: MyString
+  ph_no2: MyString

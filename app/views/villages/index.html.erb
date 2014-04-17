@@ -1,0 +1,28 @@
+<h1>Listing villages</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Facebook page</th>
+    <th>Website</th>
+    <th>Mandal</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @villages.each do |village| %>
+  <tr>
+    <td><%= village.name %></td>
+    <td><%= village.description %></td>
+    <td><%= village.facebook_page %></td>
+    <td><%= village.website %></td>
+    <td><%= village.mandal_id %></td>
+    <td><%= link_to 'Show', village %></td>
+  
+  </tr>
+<% end %>
+</table>
+
+<br />
