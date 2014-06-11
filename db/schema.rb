@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140417080412) do
+ActiveRecord::Schema.define(:version => 20140422084738) do
+
+  create_table "ads", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "category"
+    t.string   "website"
+    t.integer  "district_id"
+    t.integer  "mandal_id"
+    t.integer  "constitution_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "image"
+    t.string   "banner"
+  end
 
   create_table "constitutions", :force => true do |t|
     t.integer  "district_id"
@@ -84,6 +98,7 @@ ActiveRecord::Schema.define(:version => 20140417080412) do
     t.datetime "updated_at",      :null => false
     t.string   "image"
     t.string   "banner"
+    t.string   "candiate_name"
   end
 
   create_table "mlas", :force => true do |t|
@@ -146,6 +161,30 @@ ActiveRecord::Schema.define(:version => 20140417080412) do
     t.string   "banner"
   end
 
+  create_table "online_services", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "category"
+    t.string   "website"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "image"
+    t.string   "banner"
+  end
+
+  create_table "private_sectors", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "website"
+    t.string   "facebook_page"
+    t.integer  "district_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "image"
+    t.string   "banner"
+    t.string   "category"
+  end
+
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
     t.string   "username"
@@ -170,6 +209,18 @@ ActiveRecord::Schema.define(:version => 20140417080412) do
     t.string   "image"
     t.string   "banner"
     t.string   "proiorty"
+  end
+
+  create_table "tenders", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "category"
+    t.string   "website"
+    t.integer  "department_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "banner"
+    t.string   "image"
   end
 
   create_table "users", :force => true do |t|

@@ -1,8 +1,67 @@
 ===Requirements
 
+###Tenders
+--------------------------------------------
+name:string
+description:text
+category:string 
+website:string
+department_id:integer
 
-Places
-########
+
+##Images for Tender
+image:string
+banner:string
+
+
+
+######Private Sector
+----------------------------------------------
+name:string
+descriptin:text
+category:string 
+website:string
+facebook_page:string
+image:string   #private sector image/logo
+banner:string  #private sector banner
+
+#foreign_key
+district_id:integer
+
+
+######Ads
+----------------------------------------------
+district  has_many ads
+mandal   has_many  ads
+consituency has_many ads
+office      has_many ads
+
+
+#foriegn_keys 
+district_id :integer
+mandal_id:integer
+constitution_id:integer
+
+attr_accessible :constitution_id
+
+
+#normal DB fields
+========================
+name:string
+descriptin:text
+category:string 
+website:string
+image:string   #private sector image/logo
+banner:string  #private sector banner
+
+
+
+
+
+
+
+
+
 
 Geographical
 ########

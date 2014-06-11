@@ -36,9 +36,15 @@
 	<!-- END head -->
 </head>
 <body>
+ <h1> Laetat template </h1>
+	<!-- main navbar partial loads here -->		
+			<%= render "layouts/mainnav" %>
+			<!-- main navbar partial loads here -->
 
 <%= yield %>
-
+			<!-- footer starts here -->
+			  <%= render "layouts/footer" %>
+			<!-- footer loads here -->
 </body>
 	  <script type="text/javascript" src="/assets/orange-themes-responsive.js"></script>
 		<script type="text/javascript" src="/assets/scripts.js"></script>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @online_service.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @online_service.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @online_service.category %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @online_service.website %>
+</p>
+
+
+<%= link_to 'Edit', edit_online_service_path(@online_service) %> |
+<%= link_to 'Back', online_services_path %>

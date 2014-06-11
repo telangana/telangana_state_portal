@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-	layout 'layouts/latest'
+	#layout 'layouts/sample'
   def home
   end
 
@@ -8,4 +8,10 @@ class StaticController < ApplicationController
 
   def contact
   end
+
+  def sample
+  	 @districts = District.all
+  	 @mandals  = Mandal.all
+  end
+
 end

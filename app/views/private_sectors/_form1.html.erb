@@ -1,0 +1,15 @@
+<%= simple_form_for(@private_sector) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :website %>
+    <%= f.input :facebook_page %>
+    <%= f.input :district_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

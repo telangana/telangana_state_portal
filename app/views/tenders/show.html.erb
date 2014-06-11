@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tender.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @tender.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @tender.category %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @tender.website %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @tender.department_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_tender_path(@tender) %> |
+<%= link_to 'Back', tenders_path %>

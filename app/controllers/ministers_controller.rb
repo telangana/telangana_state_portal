@@ -1,4 +1,5 @@
 class MinistersController < ApplicationController
+  layout "layouts/latest" 
   # GET /ministers
   # GET /ministers.json
   def index
@@ -14,7 +15,7 @@ class MinistersController < ApplicationController
   # GET /ministers/1.json
   def show
     @minister = Minister.find(params[:id])
-
+    @min_deps = Minister.find(params[:id]).departments
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @minister }

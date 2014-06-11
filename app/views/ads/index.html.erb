@@ -1,0 +1,32 @@
+<h1>Listing ads</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th>Website</th>
+    <th>District</th>
+    <th>Mandal</th>
+    <th>Constitution</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ads.each do |ad| %>
+  <tr>
+    <td><%= ad.name %></td>
+    <td><%= ad.description %></td>
+    <td><%= ad.category %></td>
+    <td><%= ad.website %></td>
+    <td><%= ad.district_id %></td>
+    <td><%= ad.mandal_id %></td>
+    <td><%= ad.constitution_id %></td>
+    <td><%= link_to 'Show', ad %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />

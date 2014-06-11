@@ -11,7 +11,9 @@ class ImageUploader < CarrierWave::Uploader::Base
   # storage :fog
    include CarrierWave::RMagick
 
-
+    version :banner do
+     process :resize_to_limit => [600, 300]
+   end
    version :thumb do
      process :resize_to_limit => [200, 200]
    end

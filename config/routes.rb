@@ -1,13 +1,28 @@
 Stg::Application.routes.draw do
-  resources :jobs
+  resources :online_services
+ 
+
+  resources :tenders, :only => [:index, :show]
 
 
-  resources :news
+  resources :ads, :only => [:index, :show]
+
+
+  resources :private_sectors, :only => [:index, :show]
+
+
+  resources :jobs, :only => [:index, :show]
+
+
+  resources :news, :only => [:index, :show]
 
 
   get "static/home"
-
+  match "home1" => "static#contact" 
+  root :to => "static#home"
   get "static/about"
+  
+  get "static/sample"
 
   get "static/contact"
 
@@ -83,6 +98,8 @@ Stg::Application.routes.draw do
   #     resources :comments, :sales
   #     resource :seller
   #   end
+
+
 
   # Sample resource route with more complex sub-resources
   #   resources :products do

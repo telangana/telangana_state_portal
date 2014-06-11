@@ -1,22 +1,698 @@
-<h1>Listing districts</h1>
+  <!-- BEGIN .content -->
+      <div class="content">
+        
+        <!-- BEGIN .wrapper -->
+        <div class="wrapper">
+            
+          <!-- BEGIN .main-content-left -->
+          <div class="main-content-left">
+            
+            <div class="content-article-title">
+              <h2>Listing Districts</h2>
+              <div class="right-title-side">
+                <a href="/"><span class="icon-text">&#8962;</span>Back To Homepage</a>
+                <a href="#" class="orange"><span class="icon-text">&#59194;</span>Subscribe To RSS Feed</a>
+              </div>
+            </div>
+            
+           <!-- breaking news partial loads here -->
+              <%= render "static/breakingnews" %>
+           <!-- breaking news partial loads here -->
+            
+            <!-- BEGIN .main-content-split -->
+            <div class="main-content-split">
+              
+              <!-- BEGIN .main-split-left -->
+              <div class="main-split-left">
+              <h1 class="">Listing Districts</h1>
+              <hr>
+                <% @districts.each do |district| %>
+                <!-- BEGIN .article-big-block -->
+                <div class="article-big-block">
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+                  <div class="article-photo">
+                    <span class="image-hover">
+                      <span class="drop-icons">
+                        <span class="icon-block">
+                          <a href="#" title="Show Image" class="icon-loupe legatus-tooltip">&nbsp;</a>
+                        </span>
+                        <span class="icon-block">
+                         <a href="post.html" title="Read Article" class="icon-link legatus-tooltip">&nbsp;</a>
+                        </span>
+                      </span>
+                      <img src="<%= district.image_url %>" class="setborder" alt="" />
+                    </span>
+                  </div>
+                  
+                  <div class="article-header">
+                    <h2><%= link_to district.name,district %></h2>
+                  </div>
+                  
+                  <div class="article-content">
+                    <div class="article-rating">
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                    </div>
+                    <p><%= district.description %>...</p>
+                  </div>
+                  
+                  <div class="article-links">
+                    <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>39 comments</a>
+                    <a href="post.html" class="article-icon-link"><span class="icon-text">&#59212;</span>Read Full Article</a>
+                  </div>
+                <!-- END .article-big-block -->
+                </div>
+                <% end %>
+               
 
-<% @districts.each do |district| %>
-  <tr>
-    <td><%= district.name %></td>
-    <td><%= district.description %></td>
-    <td><%= link_to 'Show', district %></td>
-   
-  </tr>
-<% end %>
-</table>
+                
+              <!-- END .main-split-left -->
+              </div>
+              
+              <!-- BEGIN .main-split-right -->
+              <div class="main-split-right">
 
-<br />
+                <!-- BEGIN .article-small-block -->
+                <div class="article-small-block">
+                  <div class="article-header">
+                    <h2><a href="post.html">Sumo aliquip facilisi temporibus pri</a></h2>
+                  </div>
+
+                  <div class="article-photo">
+                    <span class="image-hover">
+                      <span class="drop-icons">
+                        <span class="icon-block"><a href="post.html" title="Read Article" class="icon-link legatus-tooltip">&nbsp;</a></span>
+                      </span>
+                      <img src="images/photos/image-13.jpg" class="setborder" alt="" />
+                    </span>
+                  </div>
+                  
+                  <div class="article-content">
+                    <div class="article-rating">
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                    </div>
+                    <p>Sumo aliquip pri cu. Facilisi temporibus pri et. In ubique aliquid pri, ipsum corpora id sea. Has dico invenire in. Everti maiorum volupt...</p>
+                  </div>
+                  
+                  <div class="article-links">
+                    <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>91 comments</a>
+                    <a href="post.html" class="article-icon-link"><span class="icon-text">&#59212;</span>Read Full Article</a>
+                  </div>
+                <!-- END .article-small-block -->
+                </div>
+
+                <!-- BEGIN .article-small-block -->
+                <div class="article-small-block">
+                  <div class="article-header">
+                    <h2><a href="#">Quodsi everti ancillae vim lorem persius petentium</a></h2>
+                  </div>
+
+                  <div class="article-photo">
+                    <span class="image-hover">
+                      <span class="drop-icons">
+                        <span class="icon-block"><a href="post.html" title="Read Article" class="icon-link legatus-tooltip">&nbsp;</a></span>
+                      </span>
+                      <img src="images/photos/image-14.jpg" class="setborder" alt="" />
+                    </span>
+                  </div>
+                  
+                  <div class="article-content">
+                    <div class="article-rating">
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                    </div>
+                    <p>Sumo aliquip pri cu. Facilisi temporibus pri et. In ubique aliquid pri, ipsum corpora id sea. Has dico invenire in. Everti maiorum volupt...</p>
+                  </div>
+                  
+                  <div class="article-links">
+                    <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>45 comments</a>
+                    <a href="post.html" class="article-icon-link"><span class="icon-text">&#59212;</span>Read Full Article</a>
+                  </div>
+                <!-- END .article-small-block -->
+                </div>
+
+                <!-- BEGIN .article-small-block -->
+                <div class="article-small-block">
+                  <div class="article-header">
+                    <h2><a href="post.html">Has dico invenire everti maiorum voluptatum omes eligendi erroribus</a></h2>
+                  </div>
+
+                  <div class="article-photo">
+                    <span class="image-hover">
+                      <span class="drop-icons">
+                        <span class="icon-block"><a href="post.html" title="Read Article" class="icon-link legatus-tooltip">&nbsp;</a></span>
+                      </span>
+                      <img src="images/photos/image-15.jpg" class="setborder" alt="" />
+                    </span>
+                  </div>
+                  
+                  <div class="article-content">
+                    <div class="article-rating">
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                    </div>
+                    <p>Sumo aliquip pri cu. Facilisi temporibus pri et. In ubique aliquid pri, ipsum corpora id sea. Has dico invenire in. Everti maiorum volupt...</p>
+                  </div>
+                  
+                  <div class="article-links">
+                    <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>38 comments</a>
+                    <a href="post.html" class="article-icon-link"><span class="icon-text">&#59212;</span>Read Full Article</a>
+                  </div>
+                <!-- END .article-small-block -->
+                </div>
+
+                <!-- BEGIN .article-small-block -->
+                <div class="article-small-block">
+                  <div class="article-header">
+                    <h2><a href="post.html">Ut per definiebas nominavi persecuti</a></h2>
+                  </div>
+
+                  <div class="article-photo">
+                    <span class="image-hover">
+                      <span class="drop-icons">
+                        <span class="icon-block"><a href="post.html" title="Read Article" class="icon-link legatus-tooltip">&nbsp;</a></span>
+                      </span>
+                      <img src="images/photos/image-16.jpg" class="setborder" alt="" />
+                    </span>
+                  </div>
+                  
+                  <div class="article-content">
+                    <div class="article-rating">
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                    </div>
+                    <p>Sumo aliquip pri cu. Facilisi temporibus pri et. In ubique aliquid pri, ipsum corpora id sea. Has dico invenire in. Everti maiorum volupt...</p>
+                  </div>
+                  
+                  <div class="article-links">
+                    <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>91 comments</a>
+                    <a href="post.html" class="article-icon-link"><span class="icon-text">&#59212;</span>Read Full Article</a>
+                  </div>
+                <!-- END .article-small-block -->
+                </div>
+
+                <!-- BEGIN .article-small-block -->
+                <div class="article-small-block">
+                  <div class="article-header">
+                    <h2><a href="post.html">Quodsi everti ancillae vim qui lorem persius petentium</a></h2>
+                  </div>
+
+                  <div class="article-photo">
+                    <span class="image-hover">
+                      <span class="drop-icons">
+                        <span class="icon-block"><a href="post.html" title="Read Article" class="icon-link legatus-tooltip">&nbsp;</a></span>
+                      </span>
+                      <img src="images/photos/image-17.jpg" class="setborder" alt="" />
+                    </span>
+                  </div>
+                  
+                  <div class="article-content">
+                    <div class="article-rating">
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                    </div>
+                    <p>Sumo aliquip pri cu. Facilisi temporibus pri et. In ubique aliquid pri, ipsum corpora id sea. Has dico invenire in. Everti maiorum volupt...</p>
+                  </div>
+                  
+                  <div class="article-links">
+                    <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>42 comments</a>
+                    <a href="post.html" class="article-icon-link"><span class="icon-text">&#59212;</span>Read Full Article</a>
+                  </div>
+                <!-- END .article-small-block -->
+                </div>
+
+                <!-- BEGIN .article-small-block -->
+                <div class="article-small-block">
+                  <div class="article-header">
+                    <h2><a href="post.html">Has dico invenire everti maiorum voluptatum his</a></h2>
+                  </div>
+
+                  <div class="article-photo">
+                    <span class="image-hover">
+                      <span class="drop-icons">
+                        <span class="icon-block"><a href="post.html" title="Read Article" class="icon-link legatus-tooltip">&nbsp;</a></span>
+                      </span>
+                      <img src="images/photos/image-18.jpg" class="setborder" alt="" />
+                    </span>
+                  </div>
+                  
+                  <div class="article-content">
+                    <div class="article-rating">
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                    </div>
+                    <p>Sumo aliquip pri cu. Facilisi temporibus pri et. In ubique aliquid pri, ipsum corpora id sea. Has dico invenire in. Everti maiorum volupt...</p>
+                  </div>
+                  
+                  <div class="article-links">
+                    <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>69 comments</a>
+                    <a href="post.html" class="article-icon-link"><span class="icon-text">&#59212;</span>Read Full Article</a>
+                  </div>
+                <!-- END .article-small-block -->
+                </div>
+
+                <!-- BEGIN .article-small-block -->
+                <div class="article-small-block">
+                  <div class="article-header">
+                    <h2><a href="post.html">Has dico invenire everti maiorum voluptatum his</a></h2>
+                  </div>
+
+                  <div class="article-photo">
+                    <span class="image-hover">
+                      <span class="drop-icons">
+                        <span class="icon-block"><a href="post.html" title="Read Article" class="icon-link legatus-tooltip">&nbsp;</a></span>
+                      </span>
+                      <img src="images/photos/image-19.jpg" class="setborder" alt="" />
+                    </span>
+                  </div>
+                  
+                  <div class="article-content">
+                    <div class="article-rating">
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                      <span class="icon-text active">&#9733;</span>
+                    </div>
+                    <p>Sumo aliquip pri cu. Facilisi temporibus pri et. In ubique aliquid pri, ipsum corpora id sea. Has dico invenire in. Everti maiorum volupt...</p>
+                  </div>
+                  
+                  <div class="article-links">
+                    <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>99 comments</a>
+                    <a href="post.html" class="article-icon-link"><span class="icon-text">&#59212;</span>Read Full Article</a>
+                  </div>
+                <!-- END .article-small-block -->
+                </div>
+                
+                
+              <!-- END .main-split-right -->
+              </div>
+              
+              <div class="clear-float"></div>
+
+            <!-- END .main-content-split -->
+            </div>
+            
+            <!-- BEGIN .main-nosplit -->
+            <div class="main-nosplit">
+              
+              
+              <!-- BEGIN .page-pager -->
+              <div class="page-pager">
+                <a href="#" class="prev"><span class="icon-text">&#59229;</span>Previous Page</a>
+                <a href="#">1</a>
+                <span>2</span>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#" class="next">Next Page<span class="icon-text">&#59230;</span></a>
+              <!-- END .page-pager -->
+              </div>
+
+            <!-- END .main-nosplit -->
+            </div>
+            
+          <!-- END .main-content-left -->
+          </div>
+            
+          <!-- BEGIN .main-content-right -->
+          <div class="main-content-right">
+            
+            <!-- BEGIN .main-nosplit -->
+            <div class="main-nosplit">
+              
+              <!-- BEGIN .banner -->
+              <div class="banner">
+                <div class="banner-block">
+                  <a href="#"><img src="images/banner-300x250.jpg" alt="" /></a>
+                </div>
+                <div class="banner-info">
+                  <a href="contact-us.html" class="sponsored"><span class="icon-default">&nbsp;</span>Sponsored Advert<span class="icon-default">&nbsp;</span></a>
+                </div>
+              <!-- END .banner -->
+              </div>
+              
+            <!-- END .main-nosplit -->
+            </div>
+
+            
+            <!-- BEGIN .main-content-split -->
+            <div class="main-content-split">
+              
+              <!-- BEGIN .main-split-left -->
+              <div class="main-split-left">
+                
+                <!-- END .panel -->
+                <div class="panel">
+                  <h3>Popular articles</h3>
+                  <div>
+                    
+                    <!-- BEGIN .article-middle-block -->
+                    <div class="article-middle-block">
+                      
+                      <div class="article-photo">
+                        <a href="post.html">
+                          <img src="images/photos/image-36.jpg" class="setborder" alt="" />
+                        </a>
+                      </div>
+                    
+                      <div class="article-header">
+                        <h2><a href="post.html">Sumo aliquip facilisi temporibus pri</a></h2>
+                        <div class="article-rating">
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text">&#9734;</span>
+                        </div>
+                      </div>
+                      
+                      <div class="article-links">
+                        <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>91 comments</a>
+                      </div>
+
+                    <!-- END .article-middle-block -->
+                    </div>
+                    
+                    <!-- BEGIN .article-middle-block -->
+                    <div class="article-middle-block">
+
+                      <div class="article-photo">
+                        <a href="post.html">
+                          <img src="images/photos/image-37.jpg" class="setborder" alt="" />
+                        </a>
+                      </div>
+                    
+                      <div class="article-header">
+                        <h2><a href="post.html">Deleniti voluptatibus congue erroribus nec</a></h2>
+                        <div class="article-rating">
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text">&#9734;</span>
+                          <span class="icon-text">&#9734;</span>
+                        </div>
+                      </div>
+                      
+                      <div class="article-links">
+                        <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>23 comments</a>
+                      </div>
+
+                    <!-- END .article-middle-block -->
+                    </div>
+                    
+                    <!-- BEGIN .article-middle-block -->
+                    <div class="article-middle-block">
+
+                      <div class="article-photo">
+                        <a href="post.html">
+                          <img src="images/photos/image-38.jpg" class="setborder" alt="" />
+                        </a>
+                      </div>
+                    
+                      <div class="article-header">
+                        <h2><a href="post.html">Denique conceptm ad minim scaevola no</a></h2>
+                        <div class="article-rating">
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                        </div>
+                      </div>
+                      
+                      <div class="article-links">
+                        <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>101 comments</a>
+                      </div>
+
+                    <!-- END .article-middle-block -->
+                    </div>
+                    
+                    <!-- BEGIN .article-middle-block -->
+                    <div class="article-middle-block">
+
+                      <div class="article-photo">
+                        <a href="post.html">
+                          <img src="images/photos/image-39.jpg" class="setborder" alt="" />
+                        </a>
+                      </div>
+                    
+                      <div class="article-header">
+                        <h2><a href="post.html">An oblique nusquam pertinacia et mei</a></h2>
+                        <div class="article-rating">
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text">&#9734;</span>
+                        </div>
+                      </div>
+                      
+                      <div class="article-links">
+                        <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>45 comments</a>
+                      </div>
+
+                    <!-- END .article-middle-block -->
+                    </div>
+                    
+                    <!-- BEGIN .article-middle-block -->
+                    <div class="article-middle-block">
+
+                      <div class="article-photo">
+                        <a href="post.html">
+                          <img src="images/photos/image-40.jpg" class="setborder" alt="" />
+                        </a>
+                      </div>
+                    
+                      <div class="article-header">
+                        <h2><a href="post.html">Ut sea omnes causae eleifend eirmod</a></h2>
+                        <div class="article-rating">
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text">&#9734;</span>
+                        </div>
+                      </div>
+                      
+                      <div class="article-links">
+                        <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>239 comments</a>
+                      </div>
+
+                    <!-- END .article-middle-block -->
+                    </div>
+                    
+                    <!-- BEGIN .article-middle-block -->
+                    <div class="article-middle-block">
+
+                      <div class="article-photo">
+                        <a href="post.html">
+                          <img src="images/photos/image-41.jpg" class="setborder" alt="" />
+                        </a>
+                      </div>
+                    
+                      <div class="article-header">
+                        <h2><a href="post.html">Ut sea omnes causae eleifend eirmod</a></h2>
+                        <div class="article-rating">
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text active">&#9733;</span>
+                          <span class="icon-text">&#9734;</span>
+                        </div>
+                      </div>
+                      
+                      <div class="article-links">
+                        <a href="post.html#comments" class="article-icon-link"><span class="icon-text">&#59160;</span>87 comments</a>
+                      </div>
+
+                    <!-- END .article-middle-block -->
+                    </div>
+                    
+                  </div>
+                <!-- END .panel -->
+                </div>
+
+              <!-- END .main-split-left -->
+              </div>
+              
+              <!-- BEGIN .main-split-right -->
+              <div class="main-split-right">
+
+                <!-- BEGIN .panel -->
+                <div class="panel">
+                  <h3>Popular categories</h3>
+                  <div>
+                    
+                    <ul class="category-list">
+                      <li><span class="category-bull" style="background:#a21d1d;">&nbsp;</span><a href="category.html">Sport News</a><span class="article-count">(101)</span></li>
+                      <li><span class="category-bull" style="background:#338aa6;">&nbsp;</span><a href="category.html">Business</a><span class="article-count">(93)</span></li>
+                      <li><span class="category-bull" style="background:#9f3819;">&nbsp;</span><a href="category.html">Technology</a><span class="article-count">(66)</span></li>
+                      <li><span class="category-bull" style="background:#6d8b13;">&nbsp;</span><a href="category.html">Entertainment</a><span class="article-count">(40)</span></li>
+                      <li><span class="category-bull" style="background:#cb50b5;">&nbsp;</span><a href="category.html">Gossips</a><span class="article-count">(37)</span></li>
+                      <li><span class="category-bull" style="background:#13168b;">&nbsp;</span><a href="category.html">Online Shopping</a><span class="article-count">(22)</span></li>
+                      <li><span class="category-bull" style="background:#8b6d13;">&nbsp;</span><a href="category.html">Automotive</a><span class="article-count">(16)</span></li>
+                    </ul>
+
+                  </div>
+                <!-- END .panel -->
+                </div>
+
+                <!-- BEGIN .panel -->
+                <div class="panel">
+                  <h3>Recent Comments</h3>
+                  <div>
+                    
+                    <div class="panel-comment">
+                      <div class="comment-header">
+                        <b><a href="#">Vitali Seppel</a></b>
+                      </div>
+                      <div class="comment-content">
+                        <p>Erant sapientem at usu, lorem aliquid scribentur id vel. Sed habeo gloriatur abhorreant ex, fabella accommodare ei.</p>
+                      </div>
+                      <div class="comment-links">
+                        <a href="post.html#comments" class="comment-icon-link"><span class="icon-text">&#59160;</span>View in article</a>
+                      </div>
+                    </div>
+                    
+                    <div class="panel-comment">
+                      <div class="comment-header">
+                        <b>Rameshwar Svante</b>
+                      </div>
+                      <div class="comment-content">
+                        <p>Ei vis cibo assueverit, erat salutatus ius ne.</p>
+                      </div>
+                      <div class="comment-links">
+                        <a href="post.html#comments" class="comment-icon-link"><span class="icon-text">&#59160;</span>View in article</a>
+                      </div>
+                    </div>
+                    
+                    <div class="panel-comment">
+                      <div class="comment-header">
+                        <b><a href="#">Sohail Rhydderch</a></b>
+                      </div>
+                      <div class="comment-content">
+                        <p>Timeam laboramus omittantur et mei, everti commodo id pri vulputate, insolens pericula.</p>
+                      </div>
+                      <div class="comment-links">
+                        <a href="post.html#comments" class="comment-icon-link"><span class="icon-text">&#59160;</span>View in article</a>
+                      </div>
+                    </div>
+                    
+                    <div class="panel-comment">
+                      <div class="comment-header">
+                        <b><a href="#">Eduard Peter</a></b>
+                      </div>
+                      <div class="comment-content">
+                        <p>Possim quaerendum usu id, an pro lorem affert, te audiam tri tani imperdiet eam.</p>
+                      </div>
+                      <div class="comment-links">
+                        <a href="post.html#comments" class="comment-icon-link"><span class="icon-text">&#59160;</span>View in article</a>
+                      </div>
+                    </div>
+
+                  </div>
+                <!-- END .panel -->
+                </div>
+
+                <!-- BEGIN .panel -->
+                <div class="panel">
+                  <h3>Latest Galleries</h3>
+                  <div>
+                    
+                    <div class="panel-gallery">
+                      <div class="gallery-images">
+
+                        <a href="#" class="gallery-navi-left icon-text">&#59229;</a>
+                        <a href="#" class="gallery-navi-right icon-text">&#59230;</a>
+                        <ul>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-42.jpg" class="setborder" alt="" title="" /></a></li>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-43.jpg" class="setborder" alt="" title="" /></a></li>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-44.jpg" class="setborder" alt="" title="" /></a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="gallery-header">
+                        <b><a href="photo-gallery-single.html">Wisi mucius prota sed deleniti voluptatibus</a></b>
+                      </div>
+                    </div>
+                    
+                    <div class="panel-gallery">
+                      <div class="gallery-images">
+
+                        <a href="#" class="gallery-navi-left icon-text">&#59229;</a>
+                        <a href="#" class="gallery-navi-right icon-text">&#59230;</a>
+                        <ul>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-43.jpg" class="setborder" alt="" title="" /></a></li>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-44.jpg" class="setborder" alt="" title="" /></a></li>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-42.jpg" class="setborder" alt="" title="" /></a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="gallery-header">
+                        <b><a href="photo-gallery-single.html">Wisi mucius prota sed deleniti voluptatibus</a></b>
+                      </div>
+                    </div>
+                    
+                    <div class="panel-gallery">
+                      <div class="gallery-images">
+
+                        <a href="#" class="gallery-navi-left icon-text">&#59229;</a>
+                        <a href="#" class="gallery-navi-right icon-text">&#59230;</a>
+                        <ul>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-44.jpg" class="setborder" alt="" title="" /></a></li>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-42.jpg" class="setborder" alt="" title="" /></a></li>
+                          <li class="active"><a href="photo-gallery-single.html"><img src="images/photos/image-43.jpg" class="setborder" alt="" title="" /></a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="gallery-header">
+                        <b><a href="photo-gallery-single.html">Wisi mucius prota sed deleniti voluptatibus</a></b>
+                      </div>
+                    </div>
+                    
+                  </div>
+                <!-- END .panel -->
+                </div>
+
+              <!-- END .main-split-right -->
+              </div>
+
+            <!-- END .main-content-split -->
+            </div>
+            
+            
+          <!-- END .main-content-right -->
+          </div>
+          
+          <div class="clear-float"></div>
+          
+        <!-- END .wrapper -->
+        </div>
+        
+      <!-- BEGIN .content -->
+      </div>
+

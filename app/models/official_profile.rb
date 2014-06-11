@@ -5,6 +5,9 @@ class OfficialProfile < ActiveRecord::Base
   mount_uploader :banner, BannerUploader
 
 
+ #relations 
+ 	belongs_to :job_position
+  
   #scope methods
   def self.latest
   	limit(5)
